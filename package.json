@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation for SauceDemo e-commerce application",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:report": "npx playwright show-report",
+    "test:login": "npx playwright test tests/login.spec.ts",
+    "test:checkout": "npx playwright test tests/checkout.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "typescript": "^5.4.5"
+  }
+}
